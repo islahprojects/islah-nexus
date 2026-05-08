@@ -1,1 +1,41 @@
-/target
+﻿# Local secrets / credentials
+.env
+*.env
+*.key
+*.pem
+*.p12
+*.pfx
+*.token
+*token*
+*secret*
+
+# Python / caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Node / frontend
+node_modules/
+.next/
+dist/*/
+
+# Local databases / logs / memory
+*.db
+*.sqlite
+*.sqlite3
+*.log
+.notion_sync_marker_v2
+checkpoints/
+audit_outputs/
+islah_memory.jsonl
+memory_profile.json
+
+# Backups / temp
+*.bak
+*.broken
+git_untracked_backup_*/
