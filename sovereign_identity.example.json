@@ -1,0 +1,17 @@
+{
+  "project": "Islah Nexus",
+  "architect": {
+    "name": "JJ / Jajis",
+    "role": "Human project lead"
+  },
+  "node": "Heart of Bustos",
+  "core_law": "Law VII — Walang Maiiwan",
+  "principles": [
+    "local-first",
+    "human authority",
+    "truth gap preserved",
+    "no raw identity by default",
+    "consent before memory",
+    "no one gets left behind"
+  ]
+}

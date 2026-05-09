@@ -1,0 +1,30 @@
+{
+  "schema_version": "hex_glc_attestation_bridge_matrix_v1",
+  "status": "DRAFT",
+  "routing": "LOCAL_DRY_RUN_ONLY",
+  "deployment_gate": "CLOSED",
+  "release_allowed": false,
+  "confidence_sigma": 0.94,
+  "matrix": [
+    {
+      "from": "GDL",
+      "to": "GLC",
+      "mode": "digest_only",
+      "raw_payload": "BLOCKED"
+    },
+    {
+      "from": "GLC",
+      "to": "Arweave_Attestation_Bridge",
+      "mode": "metadata_only",
+      "transaction_signing": "BLOCKED"
+    },
+    {
+      "from": "Arweave_Attestation_Bridge",
+      "to": "Network",
+      "mode": "NO_BROADCAST",
+      "arweave_upload": "BLOCKED",
+      "ipfs_pin": "BLOCKED"
+    }
+  ],
+  "human_review_required": true
+}

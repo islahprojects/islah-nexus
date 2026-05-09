@@ -1,0 +1,40 @@
+{
+  "schema_version": "omnisyntax_refinement_report_v1_1",
+  "status": "CODE_NEEDS_TEST",
+  "routing": "LOCAL_DRY_RUN_ONLY",
+  "deployment_gate": "CLOSED",
+  "human_authority": "JJ_FINAL_AUTHORITY",
+  "confidence_sigma": 0.94,
+  "release_allowed": false,
+  "runtime_activation_allowed": false,
+  "network_persistence_allowed": false,
+  "private_key_handling_allowed": false,
+  "files_expected": [
+    "docs/omnisyntax_refined_v1_1.md",
+    "docs/mirror_partnership_boundary_protocol.md",
+    "docs/origin_intent_to_omnisyntax.md",
+    "schemas/omnisyntax_layer_model.schema.json",
+    "tests/test_omnisyntax_status_boundaries.py",
+    "tests/test_no_runtime_sealed_claim.py",
+    "tests/test_no_production_activation.py",
+    "tests/test_objective_function_constraints.py"
+  ],
+  "truth_gap": [
+    "Royal Audit ratio 0.93/0.07 requires empirical calibration.",
+    "SENTINEL threshold <0.05 requires tests.",
+    "WAL chaining implementation requires local failure simulation.",
+    "Zeroization is best-effort in high-level runtimes.",
+    "FoxCodex VM remains CODE_NEEDS_TEST.",
+    "No CI logs attached.",
+    "Human governance required."
+  ],
+  "consent_warnings": [
+    "No Arweave upload.",
+    "No IPFS pin.",
+    "No private key handling.",
+    "No autonomous execution.",
+    "No production deployment."
+  ],
+  "human_review_required": true,
+  "final_state": "CODE_NEEDS_TEST"
+}

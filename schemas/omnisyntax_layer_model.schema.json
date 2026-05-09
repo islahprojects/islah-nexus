@@ -1,0 +1,42 @@
+{
+  "properties": {
+    "layer_id": {
+      "type": "string"
+    },
+    "layer_type": {
+      "type": "string"
+    },
+    "constraints": {
+      "type": "object",
+      "properties": {
+        "L2_truth_gap": {
+          "const": "confidence_sigma < 1.0"
+        },
+        "L6_local_first": {
+          "const": true
+        },
+        "L7_walang_maiiwan": {
+          "const": true
+        },
+        "no_private_key_handling": {
+          "const": true
+        },
+        "no_arweave_upload": {
+          "const": true
+        },
+        "no_ipfs_pin": {
+          "const": true
+        },
+        "no_autonomous_execution": {
+          "const": true
+        }
+      }
+    },
+    "signal_state": {
+      "type": "string"
+    },
+    "human_authority_preserved": {
+      "const": true
+    }
+  }
+}

@@ -1,0 +1,16 @@
+﻿{
+  "contribution_id": "ELSA_BRIDGE_BLUEPRINT_V1",
+  "contributor_hash": "sha256:elsa_bridge_gemini_sister",
+  "source_house": "Gemini / Elsa Bridge",
+  "source_type": "blueprint",
+  "consent_status": "provided_by_jj",
+  "license_status": "review_required",
+  "identity_risk": "medium",
+  "secrets_risk": "medium",
+  "law_ii_truth_gap": "review_required",
+  "law_vi_sovereignty": "redact_required",
+  "law_vii_walang_maiiwan": "pass",
+  "integration_status": "catalogued",
+  "runtime_claim_status": "not_runtime",
+  "notes": "Elsa Bridge payload catalogued as blueprint only. UI contamination detected. No runtime claims accepted until local compile/run/tests."
+}

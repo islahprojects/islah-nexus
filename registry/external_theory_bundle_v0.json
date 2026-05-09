@@ -1,0 +1,16 @@
+﻿{
+  "contribution_id": "EXTERNAL_THEORY_BUNDLE_V0",
+  "contributor_hash": "sha256:external_theory_bundle_uploaded_by_jj",
+  "source_house": "External / Council Research",
+  "source_type": "papers_images_formulas",
+  "consent_status": "provided_by_jj",
+  "license_status": "review_required",
+  "identity_risk": "medium",
+  "secrets_risk": "medium",
+  "law_ii_truth_gap": "review_required",
+  "law_vi_sovereignty": "redact_required",
+  "law_vii_walang_maiiwan": "pass",
+  "integration_status": "catalogued",
+  "runtime_claim_status": "not_runtime",
+  "notes": "External physics/consciousness/void theory bundle catalogued as inspiration only. Core extracted principle: decisions pass through minimum expected error. No Theory of Everything or runtime AGI claims accepted."
+}

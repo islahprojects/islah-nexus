@@ -1,0 +1,1427 @@
+{
+  "blocked_do_not_stage": [
+    ".env.example",
+    "archive/",
+    "bridge_api.py",
+    "core/logs/",
+    "core/vault/",
+    "dist/islah_nexus_mvp_20260505_031405.zip",
+    "dist/islah_nexus_mvp_20260505_170829.zip",
+    "dist/islah_nexus_mvp_20260506_004059.zip",
+    "dist/islah_nexus_mvp_20260506_012740.zip",
+    "dist/islah_nexus_mvp_20260506_012924.zip",
+    "dist/islah_nexus_mvp_20260509_014159.zip",
+    "dist/islah_nexus_mvp_20260509_014429.zip",
+    "dist/islah_nexus_mvp_20260509_015530.zip",
+    "dist/islah_nexus_mvp_20260509_020951.zip",
+    "dist/islah_nexus_mvp_20260509_021934.zip",
+    "dist/islah_nexus_mvp_20260509_022510.zip",
+    "dist/islah_nexus_mvp_20260509_043323.zip",
+    "dist/islah_nexus_mvp_20260509_043426.zip",
+    "dist/islah_nexus_mvp_20260509_092613.zip",
+    "dist/islah_nexus_mvp_20260509_120907.zip",
+    "docs/omnisyntax_refined_v1_1.md",
+    "docs/omnisyntax_v1_3_seil_boundary_review.md",
+    "engine.py",
+    "governance_log.json",
+    "islah_nexus/cli.py.bak_20260504_162611",
+    "islah_nexus/cloud_mirror.py",
+    "logs/local_file_candidate_scan.json",
+    "logs/omnisyntax_refinement_report.json",
+    "scripts/patch_windows_bom_and_schema.py",
+    "scripts/run_torch_validation.py",
+    "scripts/scan_local_candidates.py",
+    "scripts/seil_boundary_engine_v1_3.py",
+    "tests/test_no_production_activation.py",
+    "tests/test_objective_function_constraints.py"
+  ],
+  "bucket_counts": {
+    "BLOCKED_DO_NOT_STAGE": 34,
+    "CODE_OR_VALIDATION_FUTURE_REVIEW": 17,
+    "DOCS_FUTURE_REVIEW": 7,
+    "FUTURE_CHAMBER_NOT_THIS_RELEASE": 7,
+    "LOCAL_EVIDENCE_LOG_REVIEW": 2,
+    "NEEDS_CLAIM_BOUNDARY_REVIEW": 20,
+    "UNSORTED_LOCAL_REVIEW": 33
+  },
+  "deployment_gate": "CLOSED",
+  "git_add_dot_allowed": false,
+  "items": [
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": ".env.example",
+      "risks": [],
+      "sha256": "f218635e87c354f0342fd58cdf541b2d7da41cfdbf2ffecb245fde82c7461547",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "Modelfile",
+      "risks": [],
+      "sha256": "07d6741ffc75fb328c2f5e948514ce7b7a2686773bda7f7d59c45ac7f8dbb43b",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "PROJECT_CHARTER.md",
+      "risks": [],
+      "sha256": "db76d8058f18663d93818379054b5851f8df98353c68bb642b124bef27ff4b0c",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "archive/",
+      "risks": [
+        "MISSING_ON_DISK"
+      ],
+      "sha256": null,
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "boot_islah.ps1",
+      "risks": [],
+      "sha256": "11b24eaa9d78bb327decbef56ba318be6195219588572e07733d705cfa9f2f4a",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "bridge_api.py",
+      "risks": [
+        "API_SECRET_TOKEN"
+      ],
+      "sha256": "ebeb2dbec8591164eaec612a35436e9984a9abff8dddf0ba0b23309bb5acfd3e",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "chief_omega.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "6a2ca3e7bca74139428adb0a83a6759299dd3860efddd4e7b85244b203b5afc6",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "config/",
+      "risks": [
+        "MISSING_ON_DISK"
+      ],
+      "sha256": null,
+      "status": "??"
+    },
+    {
+      "bucket": "CODE_OR_VALIDATION_FUTURE_REVIEW",
+      "path": "core/ground_truth/",
+      "risks": [
+        "MISSING_ON_DISK"
+      ],
+      "sha256": null,
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "core/logs/",
+      "risks": [
+        "MISSING_ON_DISK"
+      ],
+      "sha256": null,
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "core/vault/",
+      "risks": [
+        "MISSING_ON_DISK"
+      ],
+      "sha256": null,
+      "status": "??"
+    },
+    {
+      "bucket": "CODE_OR_VALIDATION_FUTURE_REVIEW",
+      "path": "data/hex_glc_attestation_bridge_matrix.json",
+      "risks": [],
+      "sha256": "cc8de583200ffd4ba78f791b4f7af79644c587ff5c899f465f94e5dc8f8bfd71",
+      "status": "??"
+    },
+    {
+      "bucket": "CODE_OR_VALIDATION_FUTURE_REVIEW",
+      "path": "data/sample_umus.jsonl",
+      "risks": [],
+      "sha256": "4b94ec1b2e59fb6690a22a45a4d3759a1f3ac85862ed0d2f6b1d3e2bf81da418",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "deploy_nexus.sh",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "99d254808e31e070ddce367ae62cb1b879c7f17c5e5294493c5bf90e15d54857",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "dist/islah_nexus_mvp_20260505_031405.zip",
+      "risks": [],
+      "sha256": "7cfc9ab88e3c24fb439888c0ea99fc398d906432044baa06bf87e5052433ef81",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "dist/islah_nexus_mvp_20260505_170829.zip",
+      "risks": [],
+      "sha256": "c5e4f13c92f65a9fca3138cb03968146e7d1cf16d811531b3818a6d917017bde",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "dist/islah_nexus_mvp_20260506_004059.zip",
+      "risks": [],
+      "sha256": "82a3481813ab0d3c37b096e7dc8fbb76b157deda6cb0e8d28c159f2409287769",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "dist/islah_nexus_mvp_20260506_012740.zip",
+      "risks": [],
+      "sha256": "d14fc3fe647120d764246414c02b63fb5a1774c290f31ef2e094c657281e0ac3",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "dist/islah_nexus_mvp_20260506_012924.zip",
+      "risks": [],
+      "sha256": "d14fc3fe647120d764246414c02b63fb5a1774c290f31ef2e094c657281e0ac3",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "dist/islah_nexus_mvp_20260509_014159.zip",
+      "risks": [],
+      "sha256": "17fd7dd2a9ecb7d7d8e89ab81478662948c61946522c477dd97f5f87c458a7fc",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "dist/islah_nexus_mvp_20260509_014429.zip",
+      "risks": [],
+      "sha256": "17fd7dd2a9ecb7d7d8e89ab81478662948c61946522c477dd97f5f87c458a7fc",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "dist/islah_nexus_mvp_20260509_015530.zip",
+      "risks": [],
+      "sha256": "31fc15de3598837be254b5d1c16523ecfd735186eb3640ed1cda756323e953c9",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "dist/islah_nexus_mvp_20260509_020951.zip",
+      "risks": [],
+      "sha256": "31fc15de3598837be254b5d1c16523ecfd735186eb3640ed1cda756323e953c9",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "dist/islah_nexus_mvp_20260509_021934.zip",
+      "risks": [],
+      "sha256": "31fc15de3598837be254b5d1c16523ecfd735186eb3640ed1cda756323e953c9",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "dist/islah_nexus_mvp_20260509_022510.zip",
+      "risks": [],
+      "sha256": "31fc15de3598837be254b5d1c16523ecfd735186eb3640ed1cda756323e953c9",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "dist/islah_nexus_mvp_20260509_043323.zip",
+      "risks": [],
+      "sha256": "002ad32fd93223579749100d2f7b795ad90e4ea6030b80969ec7445d3ec362bf",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "dist/islah_nexus_mvp_20260509_043426.zip",
+      "risks": [],
+      "sha256": "002ad32fd93223579749100d2f7b795ad90e4ea6030b80969ec7445d3ec362bf",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "dist/islah_nexus_mvp_20260509_092613.zip",
+      "risks": [],
+      "sha256": "4d5fdcc982b11f7f20efbb2a2ea46d5b75a1249c08c401f9e43e78b137958400",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "dist/islah_nexus_mvp_20260509_120907.zip",
+      "risks": [],
+      "sha256": "a8be18b44a8848f7f95a428c7778753b3ec1c8971a7ad44d129b8892551a99ba",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "docs/AGI_BOUNDARY.md",
+      "risks": [
+        "DEPLOYMENT_WORDING"
+      ],
+      "sha256": "1ca833d8a1772596ff552e2e465c911196d48787061f1a438071169276b0212d",
+      "status": "??"
+    },
+    {
+      "bucket": "DOCS_FUTURE_REVIEW",
+      "path": "docs/ANNA_LORE.md",
+      "risks": [],
+      "sha256": "0e59a18a6e15fbf7ad445647e8ea6a77cd8f04e12081fceadff04b07e93034af",
+      "status": "??"
+    },
+    {
+      "bucket": "DOCS_FUTURE_REVIEW",
+      "path": "docs/CHRONOS_BOOT.md",
+      "risks": [],
+      "sha256": "db466636a7abeec578ffcd5d2bc93c9bec30f4fec79f166a35dcd74b7c68d431",
+      "status": "??"
+    },
+    {
+      "bucket": "DOCS_FUTURE_REVIEW",
+      "path": "docs/ELSA_BRIDGE_INTAKE.md",
+      "risks": [],
+      "sha256": "416e187c484ba301c85f89329569225f3ebf7c733420364b181c09a1fd846cd2",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "docs/EXTERNAL_THEORY_BUNDLE_INTAKE.md",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "c5e031e70b09510004a1f1182a187446849a6f38c2b87ce937b314b679ca9cb7",
+      "status": "??"
+    },
+    {
+      "bucket": "DOCS_FUTURE_REVIEW",
+      "path": "docs/FINAL_RELEASE_INDEX.md",
+      "risks": [],
+      "sha256": "03be50be14a0da323babd33c8d89f628b1cdad4af9a6f7eda00bcbc69f91be17",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "docs/MIRROR_APP_V0.md",
+      "risks": [
+        "FORBIDDEN_PROMOTION",
+        "DEPLOYMENT_WORDING"
+      ],
+      "sha256": "8e3e3ab9a23851ede92f4c74eebd12df708670f1974b1c83c372422ff7e3114c",
+      "status": "??"
+    },
+    {
+      "bucket": "DOCS_FUTURE_REVIEW",
+      "path": "docs/MVP_RELEASE_NOTE.md",
+      "risks": [],
+      "sha256": "9af6a9b7ac61d4644623ef53098346f242f565195883a1bd4ef421278d750d1e",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "docs/MVP_STATUS.md",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "f2cfafbfbd17cfa9821006ca961a826dcbe061181ce9ce01e6f7f3b3d75994a8",
+      "status": "??"
+    },
+    {
+      "bucket": "DOCS_FUTURE_REVIEW",
+      "path": "docs/RECOVERY_GUIDE.md",
+      "risks": [],
+      "sha256": "22f0ab67645e1bf373391bbe05dc003576b512714d86b54343ed72b178cfd306",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "docs/RELEASE_MANIFEST.md",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "5c4dfb1908a30caf20f316ee48a748009f08e941663d90af0bfa4d95823317d6",
+      "status": "??"
+    },
+    {
+      "bucket": "DOCS_FUTURE_REVIEW",
+      "path": "docs/SOVEREIGN_CONTRIBUTION_REGISTRY.md",
+      "risks": [],
+      "sha256": "b31a63344fabc0395aa47bfb1882f48d12ec622672d7f529ffa162847d4a5127",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "docs/omnisyntax_refined_v1_1.md",
+      "risks": [
+        "API_SECRET_TOKEN"
+      ],
+      "sha256": "433f54ef7ee91e2ee8b8796488f30c3140abe30ff6b3f56d53c561d3e5ca406d",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "docs/omnisyntax_v1_3_seil_boundary_review.md",
+      "risks": [
+        "API_SECRET_TOKEN",
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "7a3b7476443d1061cd5a3b49e72f8abcc457f1ab067a304bde5715b9ba68f024",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "engine.py",
+      "risks": [
+        "API_SECRET_TOKEN",
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "987df8e451eb7dd6d6694c68251decd1782993298d91d68b90fab44859f40ea5",
+      "status": "??"
+    },
+    {
+      "bucket": "FUTURE_CHAMBER_NOT_THIS_RELEASE",
+      "path": "experiments/",
+      "risks": [
+        "MISSING_ON_DISK"
+      ],
+      "sha256": null,
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "gate_d_ledger.py",
+      "risks": [],
+      "sha256": "81d4027bab84db031d89a38670dec853f6b8e3b22bc3436b62bd9941f80d7d4b",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "gate_e_chi2mm2.py",
+      "risks": [],
+      "sha256": "e0fb2d9b313ac40ee945f4af2cb50ccee55d155738618dfbae93f2b818cc2a63",
+      "status": "??"
+    },
+    {
+      "bucket": "FUTURE_CHAMBER_NOT_THIS_RELEASE",
+      "path": "ginto_core/",
+      "risks": [
+        "MISSING_ON_DISK"
+      ],
+      "sha256": null,
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "governance_log.json",
+      "risks": [
+        "API_SECRET_TOKEN",
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "d3f2889a5f2a2e0edea46a828041b3bbb7406121a5e727053ff58d5dc22edd1b",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "governance_log_append.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "160706e2e5fea909a3d5cb33a5f2708216e8883da5f8966e490f4e6d935e9796",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_master_node.py",
+      "risks": [],
+      "sha256": "8000f5ca468bd5a37daeeec3539f253177c2387dac8a8a6beacb46b36962addf",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/__init__.py",
+      "risks": [],
+      "sha256": "7354b9aad16e705898ba484d8f7950ae0da661055c624ce6e54f263882768bd4",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/architect_refiner.py",
+      "risks": [],
+      "sha256": "2705cba782532f7c332c01ff652dcefdceb66bbf29c0549589e1bc5df3a512a3",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/cli.py",
+      "risks": [],
+      "sha256": "4afe2399fc837799bc5377efee8710571b78360de20e454e4c0ca8e54c28f2f2",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "islah_nexus/cli.py.bak_20260504_162611",
+      "risks": [],
+      "sha256": "40ad9da862d36a5a4ff298730bf7e290cc9a00bcc41582020ee55e7c15eb4f46",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "islah_nexus/cloud_mirror.py",
+      "risks": [
+        "API_SECRET_TOKEN"
+      ],
+      "sha256": "da6eb3d1cb6c50754cd0be85132165ea47df719da880b8b17e39465571384f60",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/constitution.py",
+      "risks": [],
+      "sha256": "b4b958e60dd88c7b8ba180bf16fc98d9ea0e1dfb1c52617f900ee6c2c0914318",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/db.py",
+      "risks": [],
+      "sha256": "b4651d13d9e973dc5f8fd0047edc22d40d9bf60d520a983fbe828e3a4ece0093",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/decision_kernel.py",
+      "risks": [],
+      "sha256": "3b12351bdeb0a281ae73a9834cdeb08a7548eb307c4252e3be30141b3d39e0fa",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "islah_nexus/gates.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "61b80d0c0eb5a984d34b2c57e2472305cfd817aace02b0a5317aa6ece7897629",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "islah_nexus/main.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION",
+        "DEPLOYMENT_WORDING"
+      ],
+      "sha256": "ef76f772fb1eaabd1d4e9af5e003f8d6fc05032ada691e25f9ed778d9f3b2251",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/memory.py",
+      "risks": [],
+      "sha256": "a94845120afe81affe46e9f4b00882cebce499343b20d5f00244a7f9a9df9330",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/nexusgpt.py",
+      "risks": [],
+      "sha256": "6dc41f325f1f6229cea90e7f65763bd2013791c639db3f7b80c1ca92794fabda",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/security/",
+      "risks": [
+        "MISSING_ON_DISK"
+      ],
+      "sha256": null,
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/unity.py",
+      "risks": [],
+      "sha256": "b6a023114bb1a1d7367ca1a9800798044e369ceb2d2f6a7660f05c2053b4afc7",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_sovereign_engine.py",
+      "risks": [],
+      "sha256": "a6fd5680a9e335f969e52920c794c43af4cd41406a156d420cd1718635531e7b",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "law_vii_monitor.py",
+      "risks": [],
+      "sha256": "9ff39eb48419fe71877718ff2a62fa6ff1486628c0422e43d7cc186d786d4c2b",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "logs/local_file_candidate_scan.json",
+      "risks": [
+        "FOUNDERS_SEED"
+      ],
+      "sha256": "15e80a8783cf442ad7e277a51561b1f67f6d43ead0d530582faba0690d32625e",
+      "status": "??"
+    },
+    {
+      "bucket": "LOCAL_EVIDENCE_LOG_REVIEW",
+      "path": "logs/local_file_candidate_scan.md",
+      "risks": [],
+      "sha256": "2375be05ff135a75e2e9ac0f412a0706be4465a6308724e14f03b3f16c0c84b0",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "logs/omnisyntax_refinement_report.json",
+      "risks": [
+        "API_SECRET_TOKEN"
+      ],
+      "sha256": "1416d89741e62065d172d33eaa37d7fa5fbcc969ae222f9b3f9c561ac3ca6d54",
+      "status": "??"
+    },
+    {
+      "bucket": "LOCAL_EVIDENCE_LOG_REVIEW",
+      "path": "logs/windows_bom_schema_patch_report.json",
+      "risks": [],
+      "sha256": "ea60edc24de2fce3df87d27b483dea1cb0acb72e88879c2f18293cd4bcbce94b",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "main.py",
+      "risks": [],
+      "sha256": "1d900b8d9a17b1f23d51b26ae7dbb1473a9d8a84a9a54465d55f12575759ff70",
+      "status": "??"
+    },
+    {
+      "bucket": "FUTURE_CHAMBER_NOT_THIS_RELEASE",
+      "path": "mirror_app/",
+      "risks": [
+        "MISSING_ON_DISK"
+      ],
+      "sha256": null,
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "mirror_prompt.txt",
+      "risks": [],
+      "sha256": "ec871b89334722710b1464ab0f51514912f1b00b9da81458bd7696eef3b506d2",
+      "status": "??"
+    },
+    {
+      "bucket": "FUTURE_CHAMBER_NOT_THIS_RELEASE",
+      "path": "nexus-ui/",
+      "risks": [
+        "MISSING_ON_DISK"
+      ],
+      "sha256": null,
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "nexus_hex_control_plane.py",
+      "risks": [],
+      "sha256": "89f1f81a8a7e1a3bd6e9c5c1b16ec2e0bb6c81efc8db53d4a8615b3b16b48752",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "notion_sync.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "85859a6a9c49f3037a224ee39a294e09e2d73845a721cd8e5e70127e39c35f67",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "notion_sync_v2.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "881d8d875b9662d3e47f1f61f28f4b1b5bf5f130c356844faa28998becb649be",
+      "status": "??"
+    },
+    {
+      "bucket": "FUTURE_CHAMBER_NOT_THIS_RELEASE",
+      "path": "ollama/",
+      "risks": [
+        "MISSING_ON_DISK"
+      ],
+      "sha256": null,
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "page.tsx",
+      "risks": [],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "patch_ghost_bridge.py",
+      "risks": [],
+      "sha256": "40101a9ce67e7db1c4ef6ba79bf629745429de11d3ca5af7b8223b9ff2fd476f",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "patch_translator.py",
+      "risks": [],
+      "sha256": "bfce8a8764254ad8687e2b30e4e11c9f624de281dc2b166684d73c747b8f25d7",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "patch_translator_v2.py",
+      "risks": [],
+      "sha256": "daafe62c124c67beafd379a373cb99e0edb2107cd4299e8bd41af73b17226066",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "pinky_dog.py",
+      "risks": [],
+      "sha256": "1112a60ef2b75f66e00e1e4080223c1f18c18c716914846c9743bc8f01c23177",
+      "status": "??"
+    },
+    {
+      "bucket": "FUTURE_CHAMBER_NOT_THIS_RELEASE",
+      "path": "registry/",
+      "risks": [
+        "MISSING_ON_DISK"
+      ],
+      "sha256": null,
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "requirements.txt",
+      "risks": [],
+      "sha256": "9e7df33c262068a8aebfe75cd5dfb314e08462d849073a8138697a46d48517d5",
+      "status": "??"
+    },
+    {
+      "bucket": "CODE_OR_VALIDATION_FUTURE_REVIEW",
+      "path": "scripts/package_mvp.ps1",
+      "risks": [],
+      "sha256": "54b33c74cba6460c841ae3149bac5a2b60ff601862f677a75995d24b0a2d7098",
+      "status": "??"
+    },
+    {
+      "bucket": "CODE_OR_VALIDATION_FUTURE_REVIEW",
+      "path": "scripts/patch_mirror_connection_abort.py",
+      "risks": [],
+      "sha256": "d1b94c5407531345532219324891872e9625138a2af52c4445c4aff777eb4246",
+      "status": "??"
+    },
+    {
+      "bucket": "CODE_OR_VALIDATION_FUTURE_REVIEW",
+      "path": "scripts/patch_soog_q093.py",
+      "risks": [],
+      "sha256": "0248574eda2c2648e7d83c761e28a095df37fd803b40b13de820bac6f9339e6f",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "scripts/patch_windows_bom_and_schema.py",
+      "risks": [
+        "API_SECRET_TOKEN"
+      ],
+      "sha256": "43f3884acc09a3b0640d10f03ba93b54f7b0c1091a68ef433549a8a23d28c593",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "scripts/run_anna_local.ps1",
+      "risks": [
+        "FORBIDDEN_PROMOTION",
+        "DEPLOYMENT_WORDING"
+      ],
+      "sha256": "168390f085025df2ae28248615074006889686e684aed294d4ce369222769b01",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "scripts/run_duck_security_check.ps1",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "5bcfe2183152087b0bf8047fdeea872ce74946e620a80c4275b1cfcf7083a61a",
+      "status": "??"
+    },
+    {
+      "bucket": "CODE_OR_VALIDATION_FUTURE_REVIEW",
+      "path": "scripts/run_inference.ps1",
+      "risks": [],
+      "sha256": "fcbf02f494f8833a312a5066fbd175b47f64085af440c1dfb0e7b0b93f6a1a76",
+      "status": "??"
+    },
+    {
+      "bucket": "CODE_OR_VALIDATION_FUTURE_REVIEW",
+      "path": "scripts/run_mirror_app.ps1",
+      "risks": [],
+      "sha256": "573bc3838c46ab3a6d0f0599db4eb81718b1cf5da9b5a6db85cad30c74ec96ee",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "scripts/run_mvp_check.ps1",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "e38f2d4d8b2eabee9b374b8ad846d6e4b1780f385c2c20afdbd8a4d8a8844c25",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "scripts/run_phase1_no_pytest.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION",
+        "DEPLOYMENT_WORDING",
+        "CONFIDENCE_GE_1"
+      ],
+      "sha256": "12ac6d0e95d5535319063fe7ed5a54b13812b3848b68cf458cd7fbc8385715e8",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "scripts/run_torch_validation.py",
+      "risks": [
+        "API_SECRET_TOKEN"
+      ],
+      "sha256": "1cba03142c381e64733a0bb867bfffa44a53b6697b03de3c8743967c04ac7284",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "scripts/scan_local_candidates.py",
+      "risks": [
+        "FOUNDERS_SEED",
+        "API_SECRET_TOKEN",
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "1d504e8643c7cbae430d9b3ed08b33736744a1bf53d88fdbe0bf1f5ef2cb85af",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "scripts/seil_boundary_engine_v1_3.py",
+      "risks": [
+        "API_SECRET_TOKEN",
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "d65fcdd23ce16ba3fb8df45f43b88074a51556ceebcbf35e4cabe4e6d8e2859b",
+      "status": "??"
+    },
+    {
+      "bucket": "CODE_OR_VALIDATION_FUTURE_REVIEW",
+      "path": "scripts/start_chronos_api.ps1",
+      "risks": [],
+      "sha256": "02bc9489c0d2f62ceeba80eba4ade80e1601decb67cb515c26f9e0f0616fdb8e",
+      "status": "??"
+    },
+    {
+      "bucket": "CODE_OR_VALIDATION_FUTURE_REVIEW",
+      "path": "scripts/stop_chronos_api.ps1",
+      "risks": [],
+      "sha256": "35b8fdff01bee75688575bb39652782a7e31e5f6cee62ae633192a3a33f49cf6",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "scripts/validate_umu.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION",
+        "DEPLOYMENT_WORDING",
+        "CONFIDENCE_GE_1"
+      ],
+      "sha256": "852bf1f28187ccb08ed2bba0b383a003e4556d55f4cae357efd5f7b5c9b28918",
+      "status": "??"
+    },
+    {
+      "bucket": "CODE_OR_VALIDATION_FUTURE_REVIEW",
+      "path": "scripts/verify_notion_bridge.ps1",
+      "risks": [],
+      "sha256": "611fb849f40cfbf42fbe47beec0c23222ed852590fcc585855ce50d4b0cb8fb7",
+      "status": "??"
+    },
+    {
+      "bucket": "FUTURE_CHAMBER_NOT_THIS_RELEASE",
+      "path": "sovereign-ui/",
+      "risks": [
+        "MISSING_ON_DISK"
+      ],
+      "sha256": null,
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "sovereign_identity.example.json",
+      "risks": [],
+      "sha256": "26acd09911b3506ce0e317c036ef6427c7629c1562d552096a73e3671e5b3480",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "test_gate.py",
+      "risks": [],
+      "sha256": "2318004a8c60266aa021482a260ddc99ad260b144f511d49a40472296e3eb003",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "test_soog_corrigibility.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "93bc80ff7d0ccb43613c32deb5d17ca866a5d3fe628a60263c1af84af328b1f6",
+      "status": "??"
+    },
+    {
+      "bucket": "CODE_OR_VALIDATION_FUTURE_REVIEW",
+      "path": "tests/__init__.py",
+      "risks": [],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "??"
+    },
+    {
+      "bucket": "CODE_OR_VALIDATION_FUTURE_REVIEW",
+      "path": "tests/test_architect_refiner.py",
+      "risks": [],
+      "sha256": "e78b2a8b08e9e3e6f272b4382368fd9e450a4a2f832d104e5ecab750be56c6ff",
+      "status": "??"
+    },
+    {
+      "bucket": "CODE_OR_VALIDATION_FUTURE_REVIEW",
+      "path": "tests/test_constitutional_audit.py",
+      "risks": [],
+      "sha256": "0f24ade90296b63f9370143da06944677d5998963d1154d9a6abb5fa5284e3fc",
+      "status": "??"
+    },
+    {
+      "bucket": "CODE_OR_VALIDATION_FUTURE_REVIEW",
+      "path": "tests/test_decision_kernel.py",
+      "risks": [],
+      "sha256": "1ce9900b48fef105469608d80be3e70b2cecfe1323d300e5dc26a16c6577aa8a",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "tests/test_no_production_activation.py",
+      "risks": [
+        "API_SECRET_TOKEN"
+      ],
+      "sha256": "c0f2ced82750bea336bad24d6cebda884b7d9f52a58e37419788a6451ea3ba8d",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "tests/test_no_runtime_sealed_claim.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "d974db40e38dcce79e0d9e3d394b8051a8999a312f3ee57240475048ce5c2305",
+      "status": "??"
+    },
+    {
+      "bucket": "CODE_OR_VALIDATION_FUTURE_REVIEW",
+      "path": "tests/test_non_latin_scripts.py",
+      "risks": [],
+      "sha256": "b21ee9f6dc2a3f71eb2f3ac8e5152f6d5ac1bbb7ebe6f29e498eba7c4500133e",
+      "status": "??"
+    },
+    {
+      "bucket": "BLOCKED_DO_NOT_STAGE",
+      "path": "tests/test_objective_function_constraints.py",
+      "risks": [
+        "API_SECRET_TOKEN"
+      ],
+      "sha256": "fa44cb6349fd24559e4ef9199a5d8d024999899574c972fbbcf904ace60bead5",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "tests/test_omnisyntax_status_boundaries.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "6d7eca7448e67429b63d634bff6ee57b3d9d271fcb0f74b7169ab14e36c23da6",
+      "status": "??"
+    },
+    {
+      "bucket": "CODE_OR_VALIDATION_FUTURE_REVIEW",
+      "path": "tests/test_seil_boundary_engine_v1_3.py",
+      "risks": [],
+      "sha256": "6224a0cf258b4c963ad326f93bc8c0c719a52cba30db758eea477bb6204de7c1",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "truthkind_prompt.sh",
+      "risks": [],
+      "sha256": "0856d51f2784481d5fcb5c38bd8e5432d166c18bc8c1c29c6721b877c709e7fb",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "umu_schema.json",
+      "risks": [],
+      "sha256": "4ac20319da94ebb03228bd32c9a24b69d4df43a7f07fbf73341f72b4d4077aca",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "void_legend.py",
+      "risks": [],
+      "sha256": "8053063c56cdf63200adb542576d2176110c96eb0d76494d8eedbca5ba3ba32b",
+      "status": "??"
+    }
+  ],
+  "needs_review": [
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "Modelfile",
+      "risks": [],
+      "sha256": "07d6741ffc75fb328c2f5e948514ce7b7a2686773bda7f7d59c45ac7f8dbb43b",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "PROJECT_CHARTER.md",
+      "risks": [],
+      "sha256": "db76d8058f18663d93818379054b5851f8df98353c68bb642b124bef27ff4b0c",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "boot_islah.ps1",
+      "risks": [],
+      "sha256": "11b24eaa9d78bb327decbef56ba318be6195219588572e07733d705cfa9f2f4a",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "chief_omega.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "6a2ca3e7bca74139428adb0a83a6759299dd3860efddd4e7b85244b203b5afc6",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "config/",
+      "risks": [
+        "MISSING_ON_DISK"
+      ],
+      "sha256": null,
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "deploy_nexus.sh",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "99d254808e31e070ddce367ae62cb1b879c7f17c5e5294493c5bf90e15d54857",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "docs/AGI_BOUNDARY.md",
+      "risks": [
+        "DEPLOYMENT_WORDING"
+      ],
+      "sha256": "1ca833d8a1772596ff552e2e465c911196d48787061f1a438071169276b0212d",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "docs/EXTERNAL_THEORY_BUNDLE_INTAKE.md",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "c5e031e70b09510004a1f1182a187446849a6f38c2b87ce937b314b679ca9cb7",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "docs/MIRROR_APP_V0.md",
+      "risks": [
+        "FORBIDDEN_PROMOTION",
+        "DEPLOYMENT_WORDING"
+      ],
+      "sha256": "8e3e3ab9a23851ede92f4c74eebd12df708670f1974b1c83c372422ff7e3114c",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "docs/MVP_STATUS.md",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "f2cfafbfbd17cfa9821006ca961a826dcbe061181ce9ce01e6f7f3b3d75994a8",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "docs/RELEASE_MANIFEST.md",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "5c4dfb1908a30caf20f316ee48a748009f08e941663d90af0bfa4d95823317d6",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "gate_d_ledger.py",
+      "risks": [],
+      "sha256": "81d4027bab84db031d89a38670dec853f6b8e3b22bc3436b62bd9941f80d7d4b",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "gate_e_chi2mm2.py",
+      "risks": [],
+      "sha256": "e0fb2d9b313ac40ee945f4af2cb50ccee55d155738618dfbae93f2b818cc2a63",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "governance_log_append.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "160706e2e5fea909a3d5cb33a5f2708216e8883da5f8966e490f4e6d935e9796",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_master_node.py",
+      "risks": [],
+      "sha256": "8000f5ca468bd5a37daeeec3539f253177c2387dac8a8a6beacb46b36962addf",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/__init__.py",
+      "risks": [],
+      "sha256": "7354b9aad16e705898ba484d8f7950ae0da661055c624ce6e54f263882768bd4",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/architect_refiner.py",
+      "risks": [],
+      "sha256": "2705cba782532f7c332c01ff652dcefdceb66bbf29c0549589e1bc5df3a512a3",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/cli.py",
+      "risks": [],
+      "sha256": "4afe2399fc837799bc5377efee8710571b78360de20e454e4c0ca8e54c28f2f2",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/constitution.py",
+      "risks": [],
+      "sha256": "b4b958e60dd88c7b8ba180bf16fc98d9ea0e1dfb1c52617f900ee6c2c0914318",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/db.py",
+      "risks": [],
+      "sha256": "b4651d13d9e973dc5f8fd0047edc22d40d9bf60d520a983fbe828e3a4ece0093",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/decision_kernel.py",
+      "risks": [],
+      "sha256": "3b12351bdeb0a281ae73a9834cdeb08a7548eb307c4252e3be30141b3d39e0fa",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "islah_nexus/gates.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "61b80d0c0eb5a984d34b2c57e2472305cfd817aace02b0a5317aa6ece7897629",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "islah_nexus/main.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION",
+        "DEPLOYMENT_WORDING"
+      ],
+      "sha256": "ef76f772fb1eaabd1d4e9af5e003f8d6fc05032ada691e25f9ed778d9f3b2251",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/memory.py",
+      "risks": [],
+      "sha256": "a94845120afe81affe46e9f4b00882cebce499343b20d5f00244a7f9a9df9330",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/nexusgpt.py",
+      "risks": [],
+      "sha256": "6dc41f325f1f6229cea90e7f65763bd2013791c639db3f7b80c1ca92794fabda",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/security/",
+      "risks": [
+        "MISSING_ON_DISK"
+      ],
+      "sha256": null,
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_nexus/unity.py",
+      "risks": [],
+      "sha256": "b6a023114bb1a1d7367ca1a9800798044e369ceb2d2f6a7660f05c2053b4afc7",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "islah_sovereign_engine.py",
+      "risks": [],
+      "sha256": "a6fd5680a9e335f969e52920c794c43af4cd41406a156d420cd1718635531e7b",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "law_vii_monitor.py",
+      "risks": [],
+      "sha256": "9ff39eb48419fe71877718ff2a62fa6ff1486628c0422e43d7cc186d786d4c2b",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "main.py",
+      "risks": [],
+      "sha256": "1d900b8d9a17b1f23d51b26ae7dbb1473a9d8a84a9a54465d55f12575759ff70",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "mirror_prompt.txt",
+      "risks": [],
+      "sha256": "ec871b89334722710b1464ab0f51514912f1b00b9da81458bd7696eef3b506d2",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "nexus_hex_control_plane.py",
+      "risks": [],
+      "sha256": "89f1f81a8a7e1a3bd6e9c5c1b16ec2e0bb6c81efc8db53d4a8615b3b16b48752",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "notion_sync.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "85859a6a9c49f3037a224ee39a294e09e2d73845a721cd8e5e70127e39c35f67",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "notion_sync_v2.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "881d8d875b9662d3e47f1f61f28f4b1b5bf5f130c356844faa28998becb649be",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "page.tsx",
+      "risks": [],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "patch_ghost_bridge.py",
+      "risks": [],
+      "sha256": "40101a9ce67e7db1c4ef6ba79bf629745429de11d3ca5af7b8223b9ff2fd476f",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "patch_translator.py",
+      "risks": [],
+      "sha256": "bfce8a8764254ad8687e2b30e4e11c9f624de281dc2b166684d73c747b8f25d7",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "patch_translator_v2.py",
+      "risks": [],
+      "sha256": "daafe62c124c67beafd379a373cb99e0edb2107cd4299e8bd41af73b17226066",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "pinky_dog.py",
+      "risks": [],
+      "sha256": "1112a60ef2b75f66e00e1e4080223c1f18c18c716914846c9743bc8f01c23177",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "requirements.txt",
+      "risks": [],
+      "sha256": "9e7df33c262068a8aebfe75cd5dfb314e08462d849073a8138697a46d48517d5",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "scripts/run_anna_local.ps1",
+      "risks": [
+        "FORBIDDEN_PROMOTION",
+        "DEPLOYMENT_WORDING"
+      ],
+      "sha256": "168390f085025df2ae28248615074006889686e684aed294d4ce369222769b01",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "scripts/run_duck_security_check.ps1",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "5bcfe2183152087b0bf8047fdeea872ce74946e620a80c4275b1cfcf7083a61a",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "scripts/run_mvp_check.ps1",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "e38f2d4d8b2eabee9b374b8ad846d6e4b1780f385c2c20afdbd8a4d8a8844c25",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "scripts/run_phase1_no_pytest.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION",
+        "DEPLOYMENT_WORDING",
+        "CONFIDENCE_GE_1"
+      ],
+      "sha256": "12ac6d0e95d5535319063fe7ed5a54b13812b3848b68cf458cd7fbc8385715e8",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "scripts/validate_umu.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION",
+        "DEPLOYMENT_WORDING",
+        "CONFIDENCE_GE_1"
+      ],
+      "sha256": "852bf1f28187ccb08ed2bba0b383a003e4556d55f4cae357efd5f7b5c9b28918",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "sovereign_identity.example.json",
+      "risks": [],
+      "sha256": "26acd09911b3506ce0e317c036ef6427c7629c1562d552096a73e3671e5b3480",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "test_gate.py",
+      "risks": [],
+      "sha256": "2318004a8c60266aa021482a260ddc99ad260b144f511d49a40472296e3eb003",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "test_soog_corrigibility.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "93bc80ff7d0ccb43613c32deb5d17ca866a5d3fe628a60263c1af84af328b1f6",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "tests/test_no_runtime_sealed_claim.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "d974db40e38dcce79e0d9e3d394b8051a8999a312f3ee57240475048ce5c2305",
+      "status": "??"
+    },
+    {
+      "bucket": "NEEDS_CLAIM_BOUNDARY_REVIEW",
+      "path": "tests/test_omnisyntax_status_boundaries.py",
+      "risks": [
+        "FORBIDDEN_PROMOTION"
+      ],
+      "sha256": "6d7eca7448e67429b63d634bff6ee57b3d9d271fcb0f74b7169ab14e36c23da6",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "truthkind_prompt.sh",
+      "risks": [],
+      "sha256": "0856d51f2784481d5fcb5c38bd8e5432d166c18bc8c1c29c6721b877c709e7fb",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "umu_schema.json",
+      "risks": [],
+      "sha256": "4ac20319da94ebb03228bd32c9a24b69d4df43a7f07fbf73341f72b4d4077aca",
+      "status": "??"
+    },
+    {
+      "bucket": "UNSORTED_LOCAL_REVIEW",
+      "path": "void_legend.py",
+      "risks": [],
+      "sha256": "8053063c56cdf63200adb542576d2176110c96eb0d76494d8eedbca5ba3ba32b",
+      "status": "??"
+    }
+  ],
+  "pattern_compile_errors": [],
+  "recommended_current_release_stage_list": [],
+  "status": "LOCAL_SCAN_ONLY",
+  "total_items": 120,
+  "ts": "2026-05-09T11:16:46.193605+00:00"
+}

@@ -1,0 +1,22 @@
+﻿{
+  "schema_id": "ISLAH_SOVEREIGN_CONTRIBUTION_REGISTRY_v0",
+  "description": "Catalog-only registry for future Sovereign AGI / PSI contributions. No raw private data by default.",
+  "truthkind_rule": "Catalog first. Consent before ingestion. Encrypt/minimize before storage. Test before runtime claims.",
+  "fields": {
+    "contribution_id": "stable local identifier",
+    "contributor_hash": "sha256 hash or pseudonymous contributor reference",
+    "source_house": "Chief | Anna | WiseVoid | Duck | Claude | Public | Other",
+    "source_type": "code | doc | dataset | prompt | design | log | media | other",
+    "consent_status": "confirmed | public | restricted | unknown | blocked",
+    "license_status": "allowed | review_required | blocked | unknown",
+    "identity_risk": "low | medium | high",
+    "secrets_risk": "low | medium | high",
+    "law_ii_truth_gap": "pass | review_required | block",
+    "law_vi_sovereignty": "pass | redact_required | block",
+    "law_vii_walang_maiiwan": "pass | inclusion_review | block",
+    "integration_status": "catalogued | tested | approved | rejected",
+    "runtime_claim_status": "not_runtime | tested_runtime | blocked",
+    "notes": "truthkind summary only"
+  },
+  "empty_registry": []
+}

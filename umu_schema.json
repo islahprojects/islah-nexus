@@ -1,0 +1,152 @@
+[
+  {
+    "term": "liwanag",
+    "language": "Tagalog",
+    "script": "Latin",
+    "meaning": "light / clarity",
+    "uncertainty_score": 0.72,
+    "sacred": false,
+    "consent_token": null,
+    "status": "CONFIRMED"
+  },
+  {
+    "term": "kapwa",
+    "language": "Tagalog",
+    "script": "Latin",
+    "meaning": "shared identity",
+    "uncertainty_score": 0.81,
+    "sacred": true,
+    "consent_token": "COMMUNITY_CONSENT_001",
+    "status": "CONFIRMED"
+  },
+  {
+    "term": "ubuntu",
+    "language": "Zulu",
+    "script": "Latin",
+    "meaning": "I am because we are",
+    "uncertainty_score": 0.79,
+    "sacred": true,
+    "consent_token": "COMMUNITY_CONSENT_003",
+    "status": "CONFIRMED"
+  },
+  {
+    "term": "salam",
+    "language": "Arabic",
+    "script": "Arabic",
+    "meaning": "peace",
+    "uncertainty_score": 0.65,
+    "sacred": false,
+    "consent_token": null,
+    "status": "CONFIRMED"
+  },
+  {
+    "term": "karuna",
+    "language": "Sanskrit",
+    "script": "Devanagari",
+    "meaning": "compassion",
+    "uncertainty_score": 0.77,
+    "sacred": true,
+    "consent_token": "COMMUNITY_CONSENT_004",
+    "status": "CONFIRMED"
+  },
+  {
+    "term": "ayni",
+    "language": "Quechua",
+    "script": "Latin",
+    "meaning": "reciprocity",
+    "uncertainty_score": 0.88,
+    "sacred": true,
+    "consent_token": "COMMUNITY_CONSENT_005",
+    "status": "CONFIRMED"
+  },
+  {
+    "term": "ubuntu",
+    "language": "Swahili",
+    "script": "Latin",
+    "meaning": "humanity",
+    "uncertainty_score": 0.76,
+    "sacred": false,
+    "consent_token": null,
+    "status": "CONFIRMED"
+  },
+  {
+    "term": "han",
+    "language": "Korean",
+    "script": "Hangul",
+    "meaning": "collective grief / resilience",
+    "uncertainty_score": 0.83,
+    "sacred": true,
+    "consent_token": "COMMUNITY_CONSENT_006",
+    "status": "CONFIRMED"
+  },
+  {
+    "term": "hygge",
+    "language": "Danish",
+    "script": "Latin",
+    "meaning": "cozy togetherness",
+    "uncertainty_score": 0.71,
+    "sacred": false,
+    "consent_token": null,
+    "status": "CONFIRMED"
+  },
+  {
+    "term": "mam\u00e1",
+    "language": "Spanish",
+    "script": "Latin",
+    "meaning": "mother",
+    "uncertainty_score": 0.6,
+    "sacred": false,
+    "consent_token": null,
+    "status": "CONFIRMED"
+  },
+  {
+    "term": "ukweli",
+    "language": "Swahili",
+    "script": "Latin",
+    "meaning": "truth",
+    "uncertainty_score": 0.74,
+    "sacred": false,
+    "consent_token": null,
+    "status": "CONFIRMED"
+  },
+  {
+    "term": "wu wei",
+    "language": "Chinese",
+    "script": "Han",
+    "meaning": "effortless action",
+    "uncertainty_score": 0.8,
+    "sacred": true,
+    "consent_token": "COMMUNITY_CONSENT_007",
+    "status": "CONFIRMED"
+  },
+  {
+    "term": "meraki",
+    "language": "Greek",
+    "script": "Latin",
+    "meaning": "doing something with soul",
+    "uncertainty_score": 0.78,
+    "sacred": false,
+    "consent_token": null,
+    "status": "CONFIRMED"
+  },
+  {
+    "term": "noor",
+    "language": "Urdu",
+    "script": "Nastaliq",
+    "meaning": "divine light",
+    "uncertainty_score": 0.82,
+    "sacred": true,
+    "consent_token": "COMMUNITY_CONSENT_008",
+    "status": "CONFIRMED"
+  },
+  {
+    "term": "walang maiiwan",
+    "language": "Tagalog",
+    "script": "Latin",
+    "meaning": "no one left behind",
+    "uncertainty_score": 0.05,
+    "sacred": true,
+    "consent_token": "COMMUNITY_CONSENT_CORE",
+    "status": "CONFIRMED"
+  }
+]

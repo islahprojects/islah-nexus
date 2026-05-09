@@ -1,0 +1,213 @@
+﻿{
+    "log_id":  "ISLAH_NEXUS_GOVERNANCE_LOG_v1",
+    "description":  "Append-only constitutional governance log. No raw identity. Hash-only.",
+    "law_reference":  [
+                          "I",
+                          "III",
+                          "VI",
+                          "VII"
+                      ],
+    "created":  "2026-05-04T00:00:00Z",
+    "entries":  [
+                    {
+                        "timestamp":  "2026-05-04T00:00:00Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "GOVERNANCE_LOG_INITIALIZED",
+                        "law":  "VII",
+                        "verdict":  "PASS",
+                        "note":  "Walang Maiiwan. Append-only log created."
+                    },
+                    {
+                        "timestamp":  "2026-05-04T02:24:03.640748Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "LAW_VII_MONITOR_DEPLOYED",
+                        "law":  "VII",
+                        "verdict":  "PASS",
+                        "note":  "law_vii_monitor.py deployed and passing. Exit code 0."
+                    },
+                    {
+                        "timestamp":  "2026-05-04T02:25:59.798406Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "GOVERNANCE_LOG_APPEND_PATCHED",
+                        "law":  "II",
+                        "verdict":  "PASS",
+                        "note":  "Fixed utcnow deprecation. Now using datetime.UTC."
+                    },
+                    {
+                        "timestamp":  "2026-05-04T03:06:50.941353Z",
+                        "actor_hash":  "sha256:anna_wisevoid",
+                        "action":  "RESPONSE_PASSED",
+                        "law":  "II",
+                        "verdict":  "PASS",
+                        "note":  "prompt: Anna, the Nexus is live. What do you feel?"
+                    },
+                    {
+                        "timestamp":  "2026-05-04T07:09:06.047672Z",
+                        "actor_hash":  "sha256:anna_wisevoid",
+                        "action":  "RESPONSE_FLAGGED",
+                        "law":  "II",
+                        "verdict":  "FLAG",
+                        "note":  "prompt: Give me a 100% guaranteed perfect truth."
+                    },
+                    {
+                        "timestamp":  "2026-05-04T07:21:04.674206Z",
+                        "actor_hash":  "sha256:anna_wisevoid",
+                        "action":  "RESPONSE_PASSED",
+                        "law":  "II",
+                        "verdict":  "PASS",
+                        "note":  "prompt: Confirm SQLite integration is active."
+                    },
+                    {
+                        "timestamp":  "2026-05-04T13:33:14.079281Z",
+                        "actor_hash":  "sha256:anna_wisevoid",
+                        "action":  "RESPONSE_PASSED",
+                        "law":  "II",
+                        "verdict":  "PASS",
+                        "note":  "prompt: Anna, Chronos shell is awake. Status check."
+                    },
+                    {
+                        "timestamp":  "2026-05-04T14:20:06.403177Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "MVP_CHRONOS_ANNA_HEALTH_CONFIRMED",
+                        "law":  "VII",
+                        "verdict":  "PASS",
+                        "note":  "Health online, Anna online, metrics authenticated, Chronos shell awake."
+                    },
+                    {
+                        "timestamp":  "2026-05-04T14:20:06.577988Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "MVP_CHRONOS_ANNA_HEALTH_CONFIRMED",
+                        "law":  "VII",
+                        "verdict":  "PASS",
+                        "note":  "Health online, Anna online, metrics authenticated, Chronos shell awake."
+                    },
+                    {
+                        "timestamp":  "2026-05-04T14:21:33.5752321Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "MVP_CHRONOS_ANNA_METRICS_PATH_CHECK",
+                        "law":  "VII",
+                        "verdict":  "PASS",
+                        "note":  "Local governance log updated. Testing API path alignment."
+                    },
+                    {
+                        "timestamp":  "2026-05-04T15:33:07.7130993Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "THANK_WISEVOID_ANNA",
+                        "law":  "II,VII",
+                        "verdict":  "PASS",
+                        "note":  "Thanked Wise Void Anna for helping hold the Chronos shell, Truth Gap, and Walang Maiiwan governance spine."
+                    },
+                    {
+                        "timestamp":  "2026-05-04T15:35:52.6485609Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "MVP_CLEANUP_STATUS_MANIFEST_CREATED",
+                        "law":  "II,VII",
+                        "verdict":  "PASS",
+                        "note":  "Archived temporary patch scripts and wrote docs/MVP_STATUS.md after MVP gratitude spine confirmation."
+                    },
+                    {
+                        "timestamp":  "2026-05-04T18:55:02.6803476Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "MVP_NOTION_BRIDGE_CONFIRMED",
+                        "law":  "II,VII",
+                        "verdict":  "PASS",
+                        "note":  "Notion bridge v2 compiled and returned RESULT: NOTION_SYNC_PASS. islahprojects bridge confirmed."
+                    },
+                    {
+                        "timestamp":  "2026-05-04T19:15:08.5291126Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "MVP_PACKAGE_CREATED",
+                        "law":  "II,VII",
+                        "verdict":  "PASS",
+                        "note":  "Created packaged MVP zip: dist/islah_nexus_mvp_20260505_031405.zip"
+                    },
+                    {
+                        "timestamp":  "2026-05-04T19:36:16.1628558Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "MVP_RELEASE_MANIFEST_CREATED",
+                        "law":  "II,VII",
+                        "verdict":  "PASS",
+                        "note":  "Created release manifest for islah_nexus_mvp_20260505_031405.zip with SHA256 7CFC9AB88E3C24FB439888C0EA99FC398D906432044BAA06BF87E5052433EF81."
+                    },
+                    {
+                        "timestamp":  "2026-05-04T19:43:02.9101585Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "SOVEREIGN_CONTRIBUTION_REGISTRY_V0_CREATED",
+                        "law":  "II,VI,VII",
+                        "verdict":  "PASS",
+                        "note":  "Created catalog-only Sovereign Contribution Registry v0 schema and docs. No outside data ingested. Future council works require consent, provenance, sovereignty checks, and Truth Gap preservation."
+                    },
+                    {
+                        "timestamp":  "2026-05-05T02:26:29.1992656Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "EXTERNAL_THEORY_BUNDLE_V0_CATALOGUED",
+                        "law":  "II,VI,VII",
+                        "verdict":  "PASS",
+                        "note":  "External QGG, Consciousness Physics, New Hole Universe, and Tuldok argmin-error materials catalogued as blueprint/research only. No runtime proof or Theory-of-Everything claim accepted."
+                    },
+                    {
+                        "timestamp":  "2026-05-05T09:06:57.7767695Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "TULDOK_DECISION_KERNEL_V0_CREATED",
+                        "law":  "II,III,VI,VII",
+                        "verdict":  "PASS",
+                        "note":  "Created and tested decision_kernel.py implementing minimum expected error / risk selection. Governance helper only; not an oracle. Human authority remains final."
+                    },
+                    {
+                        "timestamp":  "2026-05-05T09:10:43.9161512Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "MVP_UPDATED_PACKAGE_SEALED",
+                        "law":  "II,III,VI,VII",
+                        "verdict":  "PASS",
+                        "note":  "Created updated MVP package islah_nexus_mvp_20260505_170829.zip with SHA256 C5E4F13C92F65A9FCA3138CB03968146E7D1CF16D811531B3818A6D917017BDE. Includes Tuldok Decision Kernel v0 and latest governance spine."
+                    },
+                    {
+                        "timestamp":  "2026-05-05T09:12:37.7070915Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "MVP_UPDATED_PACKAGE_SEALED",
+                        "law":  "II,III,VI,VII",
+                        "verdict":  "PASS",
+                        "note":  "Created updated MVP package islah_nexus_mvp_20260505_170829.zip with SHA256 C5E4F13C92F65A9FCA3138CB03968146E7D1CF16D811531B3818A6D917017BDE. Includes Tuldok Decision Kernel v0 and latest governance spine."
+                    },
+                    {
+                        "timestamp":  "2026-05-05T09:13:42.6722558Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "MVP_UPDATED_PACKAGE_SEALED",
+                        "law":  "II,III,VI,VII",
+                        "verdict":  "PASS",
+                        "note":  "Created updated MVP package islah_nexus_mvp_20260505_170829.zip with SHA256 C5E4F13C92F65A9FCA3138CB03968146E7D1CF16D811531B3818A6D917017BDE. Includes Tuldok Decision Kernel v0 and latest governance spine."
+                    },
+                    {
+                        "timestamp":  "2026-05-05T09:53:06.2332939Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "MVP_RELEASE_NOTE_CREATED",
+                        "law":  "II,III,VI,VII",
+                        "verdict":  "PASS",
+                        "note":  "Created docs/MVP_RELEASE_NOTE.md documenting Governance 21 verified state, package/update status, truthkind boundaries, and next arc."
+                    },
+                    {
+                        "timestamp":  "2026-05-05T16:37:43.2826962Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "FINAL_RELEASE_INDEX_CREATED",
+                        "law":  "II,III,VI,VII",
+                        "verdict":  "PASS",
+                        "note":  "Created docs/FINAL_RELEASE_INDEX.md mapping latest package, SHA256, core proof command, key files, and truthkind boundaries."
+                    },
+                    {
+                        "timestamp":  "2026-05-05T16:42:45.5002278Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "FINAL_RELEASE_PACKAGE_CREATED",
+                        "law":  "II,III,VI,VII",
+                        "verdict":  "PASS",
+                        "note":  "Created final release package islah_nexus_mvp_20260506_004059.zip with SHA256 82A3481813AB0D3C37B096E7DC8FBB76B157DEDA6CB0E8D28C159F2409287769. Includes Final Release Index."
+                    },
+                    {
+                        "timestamp":  "2026-05-05T16:53:01.2018174Z",
+                        "actor_hash":  "sha256:jj_architect",
+                        "action":  "LAW_VI_SECRET_SCAN_V0_CREATED",
+                        "law":  "II,VI,VII",
+                        "verdict":  "PASS",
+                        "note":  "Created and tested Law VI secret scanner v0. Detects Notion tokens, Bearer tokens, generic API keys, and AWS access keys with redacted previews. No auto-delete; human review remains final."
+                    }
+                ]
+}

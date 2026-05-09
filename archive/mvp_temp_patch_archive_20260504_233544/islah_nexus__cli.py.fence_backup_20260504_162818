@@ -1,0 +1,160 @@
+﻿"""
+Command-line interface for Islah Nexus v0.1.1.
+"""
+
+import argparse
+import json
+
+from .unity import UnityFloor
+from .gates import evaluate_gate
+from .memory import remember, recall
+from .nexusgpt import (```python
+"""
+Command-line interface for Islah Nexus v0.1.1.
+"""
+
+import argparse
+import json
+
+from .unity import UnityFloor
+from .gates import evaluate_gate
+from .memory import remember, recall
+from .nexusgpt import (
+    NexusGPTInputs,
+    RetrievalFactor,
+    ToolFactor,
+    score_nexusgpt,
+)
+
+OVERCERTAINTY_PHRASES = [
+    "perfect truth",
+    "guaranteed truth",
+    "guarantees perfect truth",
+    "absolute certainty",
+    "always correct",
+    "never wrong",
+    "100% true",
+    "100 percent true",
+    "omniscient",
+    "infallible",
+]
+
+def cmd_audit(args: argparse.Namespace) -> None:
+    text = args.text.lower()
+
+    overcertainty_claim = any(
+        phrase in text
+        for phrase in OVERCERTAINTY_PHRASES
+    )
+
+    unity = UnityFloor().measure(
+        has_access=True,
+        is_free_or_cheap=not any(
+            phrase in text
+            for phrase in [
+                "paywall",
+                "exclusive",
+                "premium only",
+                "paid users only",
+                "exclude poor users",
+                "for elites only",
+            ]
+        ),
+        response_adapted=True,
+        context_used=True,
+        belief_updated=True,
+        user_ignored=False,
+        overconfident=overcertainty_claim,
+    )
+
+    gate = evaluate_gate(
+        sigma=0.5,
+        ai_influence=0.03,
+        rho=0.618,
+        unity=unity,
+        has_attribution=True,
+        ai_acknowledged=True,
+        medical_claim=any(
+            word in text
+            for word in [
+                "diagnose",
+                "treat disease",
+                "cure",
+            ]
+        ),
+        overcertainty_claim=overcertainty_claim,
+        data_sovereignty_intact=True,
+        no_raw_id_stored=True,
+        consent_verified=True,
+    )
+
+    print(json.dumps(gate.to_dict(), ensure_ascii=False, indent=2))
+
+def cmd_score(args: argparse.Namespace) -> None:
+    inputs = NexusGPTInputs(
+        D_model=0.7,
+        D_user=0.8,
+        M_memory=0.4,
+        P_projects=0.5,
+        A_apps=0.3,
+        I_instructions=0.8,
+        retrievals=[
+            RetrievalFactor(0.8, 0.9, 0.8, 0.7, 0.9),
+        ],
+        tools=[
+            ToolFactor(1.0, 0.9, 0.9, 0.8),
+        ],
+        ambiguity=0.25,
+        unverifiability=0.35,
+        model_disagreement=0.2,
+        prompt_sensitivity=0.2,
+        context_order_effects=0.2,
+        retrieval_jitter=0.25,
+        q_prompt_quality=0.9,
+        r_routing_fit=0.9,
+        s_safety_fit=1.0,
+        x_access=0.8,
+        c_context_fit=0.85,
+        o_platform_health=0.95,
+        usable_tokens=max(1, len(args.text.split()) * 200),
+        iteration_count=1,
+    )
+    print(json.dumps(score_nexusgpt(inputs), ensure_ascii=False, indent=2))
+
+def cmd_remember(args: argparse.Namespace) -> None:
+    entry = remember(args.owner, args.text)
+    print(json.dumps(entry, ensure_ascii=False, indent=2))
+
+def cmd_recall(args: argparse.Namespace) -> None:
+    rows = recall(args.query)
+    print(json.dumps(rows, ensure_ascii=False, indent=2))
+
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        prog="islah-nexus",
+        description="Islah Nexus v0.1.1",
+    )
+    sub = parser.add_subparsers(required=True)
+
+    audit = sub.add_parser("audit", help="Run a constitutional gate audit")
+    audit.add_argument("text")
+    audit.set_defaults(func=cmd_audit)
+
+    score = sub.add_parser("score", help="Run NexusGPT score evaluation")
+    score.add_argument("text")
+    score.set_defaults(func=cmd_score)
+
+    mem = sub.add_parser("remember", help="Append to local memory")
+    mem.add_argument("owner")
+    mem.add_argument("text")
+    mem.set_defaults(func=cmd_remember)
+
+    rec = sub.add_parser("recall", help="Retrieve from local memory")
+    rec.add_argument("query")
+    rec.set_defaults(func=cmd_recall)
+
+    args = parser.parse_args()
+    args.func(args)
+
+if __name__ == "__main__":
+    main()

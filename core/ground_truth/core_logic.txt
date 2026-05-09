@@ -1,0 +1,59 @@
+﻿$ErrorActionPreference = "Stop"
+
+$ProjectID = "JAJIS2026"
+$NexusName = "islah_nexus_v0"
+$RootPath  = Join-Path $HOME $NexusName
+
+Write-Host ">>> MasterBuilder v0.2 SAFE: initializing $ProjectID framework" -ForegroundColor Cyan
+
+$Structure = @(
+    "core\vault",
+    "core\ground_truth",
+    "core\logs\rejected",
+    "core\manifests",
+    "deploy\nodes",
+    "assets\signatures",
+    "audit_outputs"
+)
+
+foreach ($dir in $Structure) {
+    $Path = Join-Path $RootPath $dir
+    if (!(Test-Path $Path)) {
+        New-Item -ItemType Directory -Path $Path -Force | Out-Null
+        Write-Host "[+] Created: $dir" -ForegroundColor Gray
+    }
+}
+
+Write-Host "`n>>> Checking tools" -ForegroundColor Cyan
+
+$ToolReport = @{}
+
+foreach ($tool in @("openssl", "rustc", "git", "python")) {
+    $cmd = Get-Command $tool -ErrorAction SilentlyContinue
+    if ($cmd) {
+        $version = try { & $tool --version 2>$null } catch { "found" }
+        $ToolReport[$tool] = @{
+            found = $true
+            path = $cmd.Source
+            version = ($version | Select-Object -First 1)
+        }
+        Write-Host "[PASS] $tool found" -ForegroundColor Green
+    } else {
+        $ToolReport[$tool] = @{ found = $false }
+        Write-Host "[WARN] $tool missing" -ForegroundColor Yellow
+    }
+}
+
+function Initialize-GroundTruth {
+    $TruthAnchor = Join-Path $RootPath "core\ground_truth\core_logic.txt"
+
+    if (!(Test-Path $TruthAnchor)) {
+@'
+No AGI claim.
+No ASI claim.
+No sovereign machine authority.
+Human authority final.
+AI is compass, never core.
+Documentation alone is not proof.
+Tests, logs, hashes, and reproducible commands decide runtime status.
+Walang Maiiwan.
