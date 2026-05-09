@@ -1,0 +1,33 @@
+﻿{
+    "created_at":  "2026-05-09T11:18:41.9744855+08:00",
+    "human_authority_final":  true,
+    "source_modified":  false,
+    "file_name":  "CONSTITUTIONAL_IMPLEMENTATION_TRIAGE_v0_1.md",
+    "source_file":  "C:\\Users\\theis\\islah_nexus_v0\\docs\\CONSTITUTIONAL_IMPLEMENTATION_TRIAGE_v0_1.md",
+    "encryption_claim":  "NOT_CLAIMED_IN_V0_3",
+    "project_id":  "JAJIS2026",
+    "verdict":  "REVIEW_REQUIRED",
+    "no_agi_claim":  true,
+    "safe_boundary_mentions":  [
+                                   {
+                                       "term":  "machine sovereignty",
+                                       "context":  "No machine sovereignty claim.",
+                                       "line":  173
+                                   },
+                                   {
+                                       "term":  "delivery guarantee",
+                                       "context":  "No RF delivery guarantee.",
+                                       "line":  176
+                                   }
+                               ],
+    "encrypted":  false,
+    "masterbuilder_version":  "0.3",
+    "asserted_findings":  [
+                              {
+                                  "term":  "production-ready",
+                                  "context":  "- production-ready",
+                                  "line":  119
+                              }
+                          ],
+    "sha256":  "7349C6DAAB9C7F20EE01344F2732177E3CC0D332D0CFA3D09C9164553A469138"
+}
