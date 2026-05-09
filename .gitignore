@@ -46,3 +46,33 @@ ddna_guardian_*.txt
 *.ddna
 *.share
 *.secret
+
+# build outputs
+target/
+**/target/
+dist/
+*.zip
+
+# local logs and vaults
+logs/
+core/logs/
+core/vault/
+archive/
+*.log
+
+# secrets / generated recovery
+.env
+.env.*
+!.env.example
+ddna_shares.json
+ddna_guardian_*.txt
+*.secret
+*.share
+*.key
+*.token
+
+# local caches
+__pycache__/
+.pytest_cache/
+node_modules/
+.next/
