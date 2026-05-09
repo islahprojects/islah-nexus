@@ -39,3 +39,10 @@ memory_profile.json
 *.bak
 *.broken
 git_untracked_backup_*/
+
+# dDNA / Shamir local secrets
+ddna_shares.json
+ddna_guardian_*.txt
+*.ddna
+*.share
+*.secret
