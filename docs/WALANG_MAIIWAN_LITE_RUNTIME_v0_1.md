@@ -23,7 +23,7 @@ This does not implement:
 - real WMMR firmware
 - real mesh routing
 - real Bluetooth relay
-- guaranteed delivery
+- No guaranteed delivery claim
 
 Boundary:
 

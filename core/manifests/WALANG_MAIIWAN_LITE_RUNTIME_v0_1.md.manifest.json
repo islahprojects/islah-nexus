@@ -1,0 +1,39 @@
+﻿{
+    "created_at":  "2026-05-09T08:56:43.6706311+08:00",
+    "human_authority_final":  true,
+    "source_modified":  false,
+    "file_name":  "WALANG_MAIIWAN_LITE_RUNTIME_v0_1.md",
+    "source_file":  "C:\\Users\\theis\\islah_nexus_v0\\docs\\WALANG_MAIIWAN_LITE_RUNTIME_v0_1.md",
+    "encryption_claim":  "NOT_CLAIMED_IN_V0_3",
+    "project_id":  "JAJIS2026",
+    "verdict":  "PASS_BOUNDARY_SCAN",
+    "no_agi_claim":  true,
+    "safe_boundary_mentions":  [
+                                   {
+                                       "term":  "delivery guarantee",
+                                       "context":  "- RF delivery guarantee rejection",
+                                       "line":  13
+                                   },
+                                   {
+                                       "term":  "guaranteed delivery",
+                                       "context":  "- No guaranteed delivery claim",
+                                       "line":  26
+                                   },
+                                   {
+                                       "term":  "sovereign consciousness",
+                                       "context":  "No sovereign consciousness claim.",
+                                       "line":  32
+                                   },
+                                   {
+                                       "term":  "delivery guarantee",
+                                       "context":  "No RF delivery guarantee.",
+                                       "line":  33
+                                   }
+                               ],
+    "encrypted":  false,
+    "masterbuilder_version":  "0.3",
+    "asserted_findings":  [
+
+                          ],
+    "sha256":  "E3E6F53093B1BC6C3AEFB1924F249A94CD1D2DE850F20C4B6A86768518E9CE70"
+}
