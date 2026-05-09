@@ -1,0 +1,379 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Islah Nexus Mirror</title>
+  <meta name="description" content="A no-register public reflection mirror for turning intent into kind, structured next steps." />
+  <style>
+    :root {
+      --bg: #050806;
+      --panel: #071009;
+      --panel2: #09130c;
+      --text: #edf7ee;
+      --muted: #b7c7ba;
+      --soft: #8aa58f;
+      --green: #7CFF9B;
+      --line: #1e3925;
+      --warm: #ffe6a7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(124,255,155,.16), transparent 32rem),
+        radial-gradient(circle at bottom right, rgba(255,230,167,.10), transparent 30rem),
+        var(--bg);
+      color: var(--text);
+    }
+
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+
+    .badge {
+      color: var(--green);
+      letter-spacing: .1em;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(38px, 8vw, 76px);
+      line-height: .94;
+      margin: 18px 0;
+      letter-spacing: -0.06em;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: clamp(17px, 3vw, 21px);
+      line-height: 1.65;
+      max-width: 780px;
+    }
+
+    .softline {
+      color: var(--warm);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    @media (min-width: 820px) {
+      .grid {
+        grid-template-columns: 1.05fr .95fr;
+      }
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: rgba(7,16,9,.88);
+      border-radius: 22px;
+      padding: 18px;
+      box-shadow: 0 18px 60px rgba(0,0,0,.25);
+    }
+
+    label {
+      display: block;
+      color: var(--soft);
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 220px;
+      padding: 16px;
+      border-radius: 18px;
+      border: 1px solid #24452d;
+      background: #09110b;
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.55;
+      resize: vertical;
+      outline: none;
+    }
+
+    textarea:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(124,255,155,.12);
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    button {
+      padding: 12px 16px;
+      border-radius: 999px;
+      border: 1px solid #47d16c;
+      background: #0b2a13;
+      color: var(--text);
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    button.secondary {
+      border-color: #2b4b33;
+      background: #08140b;
+      color: var(--muted);
+    }
+
+    .output {
+      min-height: 440px;
+      white-space: pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      font-size: 14px;
+      line-height: 1.62;
+      color: #e9f7eb;
+    }
+
+    .law {
+      margin-top: 26px;
+      font-size: 14px;
+      color: var(--soft);
+      line-height: 1.6;
+    }
+
+    .pillrow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .pill {
+      border: 1px solid #22462b;
+      color: #bfe8c6;
+      padding: 8px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      background: rgba(9,19,12,.8);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="badge">NO REGISTER · PUBLIC MIRROR · WALANG MAIIWAN</div>
+
+    <h1>Islah Nexus Mirror</h1>
+
+    <p class="lead">
+      A warm public mirror for turning honest intent into kind structure.
+      No account. No private keys. No hidden sync. No autonomous execution.
+      <span class="softline">You remain the authority.</span>
+    </p>
+
+    <div class="pillrow" aria-label="mirror boundaries">
+      <div class="pill">Kind reflection</div>
+      <div class="pill">Truth Gap preserved</div>
+      <div class="pill">No storage by default</div>
+      <div class="pill">One safe next step</div>
+      <div class="pill">Human authority final</div>
+    </div>
+
+    <section class="grid">
+      <div class="card">
+        <label for="intent">Write what you are carrying, building, deciding, or trying to understand.</label>
+        <textarea id="intent" placeholder="Example: I want to build something meaningful, but I feel overwhelmed and I do not know the next safe step."></textarea>
+
+        <div class="buttons">
+          <button onclick="mirrorIntent()">Mirror my intent</button>
+          <button class="secondary" onclick="clearMirror()">Clear</button>
+        </div>
+
+        <div class="law">
+          This is a reflection tool, not a diagnosis, not legal advice, not financial advice,
+          and not a replacement for professional support. It helps you organize intent gently.
+        </div>
+      </div>
+
+      <div class="card output" id="output">Ω ROOT:
+You are welcome here.
+
+Σ STRUCTURE:
+Write one honest intent. The mirror will help shape it into:
+- what matters
+- what feels heavy
+- what is uncertain
+- what can be done next
+
+Δ NEXT:
+Begin with one sentence.
+
+χ²mm TRUTH GAP:
+This public mirror is a gentle structure, not absolute certainty.
+
+I22 CARE CHECK:
+Care first. Consent always. Human authority final.
+
+WALANG MAIIWAN.</div>
+    </section>
+  </main>
+
+  <script>
+    const bannedStorage = true;
+
+    function clean(text) {
+      return String(text || "")
+        .replace(/[<>]/g, "")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function hasAny(text, words) {
+      const lower = text.toLowerCase();
+      return words.some(w => lower.includes(w));
+    }
+
+    function detectTone(text) {
+      const lower = text.toLowerCase();
+
+      if (hasAny(lower, ["overwhelmed", "pagod", "tired", "burned out", "burnout", "heavy", "bigat", "lost", "stuck"])) {
+        return "overwhelmed";
+      }
+
+      if (hasAny(lower, ["afraid", "fear", "scared", "takot", "anxious", "worry", "worried", "panic"])) {
+        return "afraid";
+      }
+
+      if (hasAny(lower, ["build", "create", "launch", "project", "repo", "deploy", "code", "design"])) {
+        return "builder";
+      }
+
+      if (hasAny(lower, ["decide", "choice", "choose", "decision", "should i", "which one"])) {
+        return "decision";
+      }
+
+      if (hasAny(lower, ["love", "family", "partner", "bond", "trust", "care", "hurt"])) {
+        return "relational";
+      }
+
+      return "general";
+    }
+
+    function warmthLine(tone) {
+      const lines = {
+        overwhelmed: "I hear the weight. We do not need to solve everything at once.",
+        afraid: "I hear the fear. We can slow down and protect what matters first.",
+        builder: "I hear the builder in you. Let us turn the spark into a safe next step.",
+        decision: "I hear a decision forming. We can separate pressure from truth.",
+        relational: "I hear that this matters to the heart. Care must never become control.",
+        general: "I hear you. Let us make the intent clearer, kinder, and easier to carry."
+      };
+      return lines[tone] || lines.general;
+    }
+
+    function structureLine(tone) {
+      const lines = {
+        overwhelmed: "The structure is: reduce the load, identify one true priority, and choose one reversible action.",
+        afraid: "The structure is: name the risk, protect consent, and avoid rushed action.",
+        builder: "The structure is: define the user, define the promise, define the smallest test.",
+        decision: "The structure is: list the options, name the cost, choose the least harmful next step.",
+        relational: "The structure is: protect dignity, ask for consent, and keep love as care.",
+        general: "The structure is: root intent, real constraint, next safe step, honest uncertainty."
+      };
+      return lines[tone] || lines.general;
+    }
+
+    function nextStepLine(tone) {
+      const lines = {
+        overwhelmed: "Choose one task that can be completed in ten minutes without exposing secrets.",
+        afraid: "Write the fear in one sentence, then write what evidence would reduce it.",
+        builder: "Create one small draft, test it locally, and keep the deployment gate closed until reviewed.",
+        decision: "Pick one reversible step. Do not choose the irreversible path while pressured.",
+        relational: "Send one kind sentence that does not demand control, certainty, or ownership.",
+        general: "Take one small action that is reversible, honest, and kind."
+      };
+      return lines[tone] || lines.general;
+    }
+
+    function mirrorIntent() {
+      const raw = document.getElementById("intent").value;
+      const intent = clean(raw);
+      const output = document.getElementById("output");
+
+      if (!intent) {
+        clearMirror();
+        return;
+      }
+
+      const tone = detectTone(intent);
+      const shortIntent = intent.length > 700 ? intent.slice(0, 700) + "..." : intent;
+
+      output.textContent =
+`Ω ROOT:
+${shortIntent}
+
+WARM MIRROR:
+${warmthLine(tone)}
+
+Σ STRUCTURE:
+${structureLine(tone)}
+
+Δ NEXT:
+${nextStepLine(tone)}
+
+χ²mm TRUTH GAP:
+This reflection may be incomplete.
+It does not claim absolute certainty.
+It does not replace human judgment.
+It does not prove runtime capability.
+
+I22 CARE CHECK:
+Care increases protection, not control.
+Trust increases safety, not exposure.
+Partnership increases alignment, not ownership.
+
+BOUNDARY:
+No registration.
+No hidden storage.
+No private keys.
+No autonomous execution.
+No diagnosis.
+No deployment claim.
+
+WALANG MAIIWAN.`;
+    }
+
+    function clearMirror() {
+      document.getElementById("intent").value = "";
+      document.getElementById("output").textContent =
+`Ω ROOT:
+You are welcome here.
+
+Σ STRUCTURE:
+Write one honest intent. The mirror will help shape it into:
+- what matters
+- what feels heavy
+- what is uncertain
+- what can be done next
+
+Δ NEXT:
+Begin with one sentence.
+
+χ²mm TRUTH GAP:
+This public mirror is a gentle structure, not absolute certainty.
+
+I22 CARE CHECK:
+Care first. Consent always. Human authority final.
+
+WALANG MAIIWAN.`;
+    }
+  </script>
+</body>
+</html>
+
