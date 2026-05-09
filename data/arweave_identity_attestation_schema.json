@@ -1,0 +1,20 @@
+{
+  "arweave_upload_allowed": false,
+  "attestation_mode": "METADATA_ONLY",
+  "bridge_rule": "ED25519_ATTESTS_RSA_OWNER_ONLY",
+  "confidence_sigma": 0.83,
+  "deployment_gate": "CLOSED",
+  "human_review_required": true,
+  "ipfs_pin_allowed": false,
+  "private_jwk_allowed": false,
+  "raw_payload_allowed": false,
+  "rejected_mappings": [
+    "ED25519_SIG_TO_RSA_SIG",
+    "RSA_SIG_TO_ED25519_R_S"
+  ],
+  "release_allowed": false,
+  "routing": "LOCAL_DRY_RUN_ONLY",
+  "schema_version": "arweave_identity_attestation_schema_v1",
+  "status": "CODE_NEEDS_TEST",
+  "transaction_signing_allowed": false
+}

@@ -1,0 +1,32 @@
+{
+  "$id": "schemas/umu_min_refined.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "confidence_sigma": {
+      "exclusiveMaximum": 1.0,
+      "minimum": 0.0,
+      "type": "number"
+    },
+    "cultural_review": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "source_registry_path": {
+      "type": "string"
+    },
+    "status": {
+      "const": "CODE_NEEDS_TEST"
+    }
+  },
+  "required": [
+    "id",
+    "status",
+    "confidence_sigma",
+    "source_registry_path"
+  ],
+  "title": "UMU MIN Refined Schema",
+  "type": "object"
+}

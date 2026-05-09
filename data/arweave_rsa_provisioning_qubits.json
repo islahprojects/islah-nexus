@@ -1,0 +1,21 @@
+{
+  "arweave_upload": "BLOCKED",
+  "confidence_sigma": 0.84,
+  "deployment_gate": "CLOSED",
+  "human_review_required": true,
+  "key_generation": "BLOCKED",
+  "private_jwk_loading": "BLOCKED",
+  "qubits": [
+    {
+      "active_validated": false,
+      "id": "AR_RSA_QB_001",
+      "private_material_allowed": false,
+      "purpose": "public modulus metadata shape only"
+    }
+  ],
+  "release_allowed": false,
+  "routing": "LOCAL_DRY_RUN_ONLY",
+  "schema_version": "arweave_rsa_provisioning_qubits_v1",
+  "status": "CODE_NEEDS_TEST",
+  "transaction_signing": "BLOCKED"
+}

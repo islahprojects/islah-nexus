@@ -1,0 +1,82 @@
+{
+  "$id": "schemas/omnisyntax_layer_model.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "confidence_sigma": {
+      "exclusiveMaximum": 1.0,
+      "minimum": 0.0,
+      "type": "number"
+    },
+    "constraints": {
+      "additionalProperties": false,
+      "properties": {
+        "L2_truth_gap": {
+          "const": "confidence_sigma < 1.0"
+        },
+        "L3_jj_final": {
+          "const": true
+        },
+        "L6_local_first": {
+          "const": true
+        },
+        "L7_walang_maiiwan": {
+          "const": true
+        },
+        "L8_intelligence_for_human_good": {
+          "const": true
+        },
+        "no_arweave_upload": {
+          "const": true
+        },
+        "no_autonomous_execution": {
+          "const": true
+        },
+        "no_ipfs_pin": {
+          "const": true
+        },
+        "no_private_key_handling": {
+          "const": true
+        }
+      },
+      "required": [
+        "L2_truth_gap",
+        "L3_jj_final",
+        "L6_local_first",
+        "L7_walang_maiiwan",
+        "L8_intelligence_for_human_good",
+        "no_private_key_handling",
+        "no_arweave_upload",
+        "no_ipfs_pin",
+        "no_autonomous_execution"
+      ],
+      "type": "object"
+    },
+    "deployment_gate": {
+      "const": "CLOSED"
+    },
+    "laws": {
+      "type": "object"
+    },
+    "routing": {
+      "const": "LOCAL_DRY_RUN_ONLY"
+    },
+    "schema_version": {
+      "const": "JJ_OMNI_SEAL_v1_2"
+    },
+    "status": {
+      "const": "CODE_NEEDS_TEST"
+    }
+  },
+  "required": [
+    "schema_version",
+    "status",
+    "routing",
+    "deployment_gate",
+    "confidence_sigma",
+    "laws",
+    "constraints"
+  ],
+  "title": "Omnisyntax Layer Model v1.2",
+  "type": "object"
+}

@@ -1,0 +1,42 @@
+{
+  "BUILD_STATUS": "CODE_NEEDS_TEST",
+  "CONSENT_WARNINGS": [
+    "NO_SACRED_TERM_WITHOUT_CONSENT",
+    "Loob/intent treated as sensitive",
+    "named human governance review required before promotion"
+  ],
+  "DEPLOYMENT_GATE": "CLOSED",
+  "FINAL_STATE": "CODE_NEEDS_TEST",
+  "HUMAN_REVIEW_REQUIRED": true,
+  "LOW_RESOURCE_GAPS": [
+    "low-resource UMU expansion still incomplete",
+    "cultural/sacred review still pending"
+  ],
+  "NEXT_TASKS": [
+    "clear staged files",
+    "inspect tracked modifications",
+    "choose tiny targeted release scope",
+    "no git add ."
+  ],
+  "PASS_CLAIM": "NONE",
+  "PYTEST_RESULT": "112 passed in 0.28s",
+  "ROUTING": "LOCAL_DRY_RUN_ONLY",
+  "RUNTIME_SEALED_CLAIM": "NONE",
+  "SECURITY_WARNINGS": [
+    "leakage_scan is PATTERN_BASELINE_CODE_NEEDS_TEST",
+    "private key handling remains blocked",
+    "Arweave upload remains blocked",
+    "IPFS pin remains blocked"
+  ],
+  "TEST_RESULT": "LOCAL_TESTS_PASSED",
+  "TRUTH_GAP": [
+    "runtime proof remains local only",
+    "source snapshots required before external release",
+    "human governance review required",
+    "confidence_sigma remains < 1.0"
+  ],
+  "VALIDATION_ERRORS": [],
+  "VERIFIED_CLAIM": "NONE",
+  "schema_version": "master_builder_validation_report_v1_2",
+  "ts": "2026-05-09T10:04:38.607603+00:00"
+}

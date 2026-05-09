@@ -1,0 +1,17 @@
+{
+  "build_status": "CODE_NEEDS_TEST",
+  "compression": "JJ_WORDS_TO_LOOB_TO_OMNI_TO_STRUCT_TO_MIRROR_TO_VALIDATE_TO_DRY_RUN_TO_JJ",
+  "confidence_sigma": 0.94,
+  "deployment_gate": "CLOSED",
+  "human_review_required": true,
+  "routing": "LOCAL_DRY_RUN_ONLY",
+  "schema_version": "library_compression_report_v1",
+  "truth_gap": [
+    "runtime tests required",
+    "source snapshots required",
+    "human review required",
+    "sacred term consent review required",
+    "low-resource expansion remains incomplete"
+  ],
+  "ts": "2026-05-09T08:43:23.903777+00:00"
+}

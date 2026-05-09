@@ -1,0 +1,43 @@
+{
+  "architecture_status": "BLUEPRINT_LOCKED",
+  "boundaries": [
+    "NO_PASS",
+    "NO_VERIFIED",
+    "NO_RUNTIME_SEALED",
+    "NO_DEPLOYMENT",
+    "NO_PRODUCTION_ACTIVATION",
+    "NO_PRIVATE_KEY_OUTPUT",
+    "NO_SEED_PHRASE_HANDLING",
+    "NO_ARWEAVE_UPLOAD",
+    "NO_IPFS_PIN",
+    "NO_SACRED_TERM_WITHOUT_CONSENT",
+    "NO_AUTONOMOUS_AUTHORITY"
+  ],
+  "capsule": "χχ→Ψ→OMNI→STRUCT→MIRROR→VALIDATE→DRY_RUN→JJ",
+  "confidence_sigma": 0.94,
+  "deployment_gate": "CLOSED",
+  "execution_constraint": "EXECUTION_SUBSET_OF_POLICY_INTERSECTION_AUDITABILITY_INTERSECTION_REALITY_INTERSECTION_CONSENT",
+  "human_review_required": true,
+  "laws": {
+    "L2_TRUTH_GAP": "0.0 <= confidence_sigma < 1.0",
+    "L3_JJ_FINAL": true,
+    "L6_LOCAL_FIRST": true,
+    "L7_WALANG_MAIIWAN": true,
+    "L8_INTELLIGENCE_FOR_HUMAN_GOOD": true
+  },
+  "objective": "INTENT_TO_STRUCTURED_REPRESENTATION_TO_VALIDATED_EXECUTION",
+  "objective_function": "OSI=max(COHERENCE+RECOVERABILITY+CONSTRAINT_INTEGRITY-RISK-DRIFT)",
+  "roles": {
+    "JJ": "FINAL_AUTHORITY",
+    "LOOB": "PAYLOAD",
+    "MASTER_BUILDER": "LOCAL_DRY_RUN_HAND",
+    "MIRROR": "REFINER",
+    "OMNI": "INTEL_TRANSLATOR",
+    "VALIDATOR": "TRUTH_GAP_GUARD",
+    "WORDS": "GATE"
+  },
+  "routing": "LOCAL_DRY_RUN_ONLY",
+  "schema_version": "JJ_OMNI_SEAL_v1_2",
+  "status": "CODE_NEEDS_TEST",
+  "symbolic_language_policy": "SYMBOLIC_FRAME_NOT_RUNTIME_PROOF"
+}
