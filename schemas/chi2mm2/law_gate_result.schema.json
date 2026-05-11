@@ -1,0 +1,12 @@
+﻿{
+  "title": "Chi2MM2 LawGateResult",
+  "type": "object",
+  "required": ["law", "passed", "reason", "review_required"],
+  "properties": {
+    "law": { "type": "string" },
+    "passed": { "type": "boolean" },
+    "reason": { "type": "string" },
+    "review_required": { "type": "boolean" }
+  },
+  "additionalProperties": false
+}

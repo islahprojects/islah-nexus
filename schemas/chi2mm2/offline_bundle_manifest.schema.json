@@ -1,0 +1,15 @@
+﻿{
+  "title": "Chi2MM2 OfflineBundleManifest",
+  "type": "object",
+  "required": ["bundle_id", "language_code", "language_name", "local_first", "offline_first", "raw_identity_storage", "perfect_translation_claim"],
+  "properties": {
+    "bundle_id": { "type": "string" },
+    "language_code": { "type": "string" },
+    "language_name": { "type": "string" },
+    "local_first": { "type": "boolean", "const": true },
+    "offline_first": { "type": "boolean", "const": true },
+    "raw_identity_storage": { "type": "boolean", "const": false },
+    "perfect_translation_claim": { "type": "boolean", "const": false }
+  },
+  "additionalProperties": true
+}

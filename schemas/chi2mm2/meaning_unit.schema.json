@@ -1,0 +1,14 @@
+﻿{
+  "title": "Chi2MM2 MeaningUnit",
+  "type": "object",
+  "required": ["umu_id", "source_language", "source_script", "source_text", "uncertainty_band", "community_validation"],
+  "properties": {
+    "umu_id": { "type": "string" },
+    "source_language": { "type": "string" },
+    "source_script": { "type": "string" },
+    "source_text": { "type": "string" },
+    "uncertainty_band": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "UNKNOWN"] },
+    "community_validation": { "type": "string", "enum": ["REQUIRED", "PENDING", "APPROVED", "REJECTED"] }
+  },
+  "additionalProperties": true
+}
